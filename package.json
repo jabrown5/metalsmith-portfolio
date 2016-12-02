@@ -1,17 +1,19 @@
 {
-  "name": "electroniq",
+  "name": "Portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Electroniq is astrophysicist (and retro music enthusiast) Tara Himmels' blog.",
-  "author": "Tara Himmels",
+  "description": "Data Visualizations and other programming fun",
+  "author": "JAB",
   "dependencies": {
     "handlebars": "^4.0.5",
     "metalsmith": "^2.2.0",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-layouts": "^1.6.5",
     "metalsmith-markdown": "^0.2.1",
+    "metalsmith-paginate": "^0.3.0",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-serve": "0.0.7",
+    "metalsmith-templates": "^0.7.0",
     "metalsmith-watch": "^1.0.3"
   },
   "main": "build.js",

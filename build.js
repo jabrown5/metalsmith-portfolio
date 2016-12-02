@@ -7,6 +7,12 @@ var markdown = require('metalsmith-markdown');
 var layouts = require('metalsmith-layouts');
 var handlebars = require('handlebars');
 var collections = require('metalsmith-collections');
+
+var templates = require('metalsmith-templates');
+
+
+var paginate    = require('metalsmith-paginate');
+
 var permalinks = require('metalsmith-permalinks');
 var serve = require('metalsmith-serve');
 var watch = require('metalsmith-watch');
@@ -20,6 +26,11 @@ metalsmith(__dirname)
   })
   .source('./src')
   .destination('./public')
+    .use(markdown())
+	.use(permalinks({
+        relative: false,
+        pattern: ':title'
+    }))
 	.use(collections({
 	      articles: {
 	        pattern: 'articles/**/*.md',
@@ -27,11 +38,13 @@ metalsmith(__dirname)
 	        reverse: true
 	        },
 	      }))
-	.use(markdown())
-	.use(permalinks({
-	  relative: false,
-		pattern: ':title'
-	}))
+
+    .use(paginate({
+        perPage: 10,
+        path: "blog/page"
+    }))
+    .use(templates('handlebars'))
+
 	.use(layouts({
 		engine: 'handlebars',
 		directory: './layouts',
