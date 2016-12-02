@@ -22,4 +22,37 @@
 </div>
 
 
+{{#if this.pagination}}
+<nav class="pagination">
+    {{#if pagination.next}}
+    <a href="{{pagination.next.path}}">&lt; Prev</a>
+    {{/if}}
+
+    {{#if pagination.prev}}
+    <a href="{{pagination.prev.path}}">Next &gt;</a>
+    {{/if}}
+</nav>
+{{/if}}
+
+<!--{{#if this.pagination}}-->
+<!--<nav class="pagination">-->
+    <!--{{#if this.pagination.next}}-->
+    <!--<a href="{{this.pagination.next.path}}">&lt; Prev</a>-->
+    <!--{{/if}}-->
+
+    <!--{{#if this.pagination.prev}}-->
+    <!--<a href="{{this.pagination.prev.path}}">Next &gt;</a>-->
+    <!--{{/if}}-->
+<!--</nav>-->
+<!--{{/if}}-->
+
+<!--nav-->
+<!--if pagination.previous-->
+<!--a.btn(href='/' + pagination.previous.path)-->
+<!--| Newer-->
+<!--if pagination.next-->
+<!--a.btn(href='/' + pagination.next.path)-->
+<!--| Older-->
+
+
 {{> footer }}
