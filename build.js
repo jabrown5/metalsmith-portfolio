@@ -25,7 +25,7 @@ metalsmith(__dirname)
 	        pattern: 'articles/**/*.md',
 	        sortBy: 'date',
 	        reverse: true
-	        },
+	        }
 	      }))
 	.use(markdown())
 	.use(permalinks({
