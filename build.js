@@ -22,11 +22,20 @@ metalsmith(__dirname)
   .destination('./public')
 	.use(collections({
 	      articles: {
-	        pattern: 'articles/**/*.md',
+	        pattern: 'articles/**/*.html', //changed to html instead of .md
 	        sortBy: 'date',
 	        reverse: true
 	        },
-	      }))
+        scripts: {
+            pattern: 'scripts/**/*.js' //changed to html instead of .md
+        },
+        styles: {
+            pattern: 'scripts/**/*.css' //changed to CSS -- NEEDS TESTING
+        },
+        images: {
+            pattern: 'scripts/**/*.jpg' //changed to jpg -- NEEDS TESTING
+        }
+	}))
 	.use(markdown())
 	.use(permalinks({
 	  relative: false,
@@ -49,7 +58,7 @@ metalsmith(__dirname)
 	.use(watch({
 	    paths: {
 	      "${source}/**/*": true,
-	      "layout/**/*": "**/*",
+	      "layout/**/*": "**/*"
 	    }
 	  }))
   .build(function (err) {
