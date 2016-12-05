@@ -1,0 +1,778 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8">-->
+<!--<title>{ {title }} - Data Viz Portfolio</title>-->
+<!--<meta name="description" content="Destroy the blinds stare at the wall, play with food and get confused by dust. Go into a room to decide you didn&#x27;t want to be in there anyway attack feet. Meowing non stop for food jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water but kitten is playing with dead mouse and pee in the shoe or knock dish off table head butt cant eat out of my own dish intrigued by the shower play riveting piece on synthesizer keyboard. Scratch the box then cats take over the world." />-->
+<!--</head>-->
+<!--<body>-->
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <title>{ {title }} - Data Viz Portfolio</title>
+  <meta name="description" content="Destroy the blinds stare at the wall, play with food and get confused by dust. Go into a room to decide you didn&#x27;t want to be in there anyway attack feet. Meowing non stop for food jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water but kitten is playing with dead mouse and pee in the shoe or knock dish off table head butt cant eat out of my own dish intrigued by the shower play riveting piece on synthesizer keyboard. Scratch the box then cats take over the world." />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--<title>Foundation | Welcome</title>-->
+  <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <!--<link rel='stylesheet' href='/stylesheets/style.css' />-->
+
+</head>
+
+
+<body>
+
+<!--&lt;!&ndash; Start Top Bar &ndash;&gt;-->
+<!--<div class="top-bar">-->
+<!--<div class="top-bar-left">-->
+<!--<ul class="menu">-->
+<!--<li class="menu-text">J A Brown</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<div class="top-bar-right">-->
+<!--<ul class="menu">-->
+<!--<li><a href="/about">About Me</a></li>-->
+<!--<li><a href="/contact">Contact</a></li>-->
+<!--<li><a href="/data">Data Visualizations</a></li>-->
+<!--<li><a href="/coding">Coding Projects</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; End Top Bar &ndash;&gt;-->
+
+<!--<div class="callout large primary">-->
+<!--<div class="row column text-center">-->
+<!--<h1>Jennifer Brown</h1>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!-- Start Top Bar -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="menu">
+      <li><a href="/about">About Me</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/data">Data Visualizations</a></li>
+      <li><a href="/coding">Coding Projects</a></li>
+    </ul>
+  </div>
+</div>
+<!-- End Top Bar -->
+
+<div class="callout large primary">
+  <div class="row column text-center">
+    <h1>J A Brown</h1>
+    <h2 class="subheader">Data Visualizations & Programming</h2>
+  </div>
+</div>
+
+
+<!--<div class="row" id="content">-->
+
+<div class="row medium-8 large-7 columns"><header>
+    <a class="back-to-index" href="../index.html">&larr; Index</a>
+</header>
+
+
+<!--<article>-->
+<!--<h1>Visualization 1</h1>-->
+<!--<div class="meta">-->
+<!--Published: Thu Oct 13 2016 19:00:00 GMT-0500 (CDT)-->
+<!--</div>-->
+<!--
+
+
+<head>
+    <style>
+
+        .bar{
+            fill: steelblue;
+        }
+
+        .bar:hover{
+            fill: brown;
+        }
+
+        .axis {
+            font: 10px sans-serif;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+    </style>
+</head>
+
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+
+    var data = [
+        {
+            "Letter": "A",
+            "Freq": 20
+        },
+        {
+            "Letter" : "B",
+            "Freq": 12
+        },
+        {
+            "Letter" : "C",
+            "Freq": 47
+        },
+        {
+            "Letter" : "D",
+            "Freq": 34
+        },
+        {
+            "Letter" : "E",
+            "Freq" : 54
+        },
+        {
+            "Letter" : "F",
+            "Freq" : 21
+        },
+        {
+            "Letter" : "G",
+            "Freq" : 57
+        },
+        {
+            "Letter" : "H",
+            "Freq" : 31
+        },
+        {
+            "Letter" : "I",
+            "Freq" : 17
+        },
+        {
+            "Letter" : "J",
+            "Freq" : 5
+        },
+        {
+            "Letter" : "K",
+            "Freq" : 23
+        },
+        {
+            "Letter" : "L",
+            "Freq" : 39
+        },
+        {
+            "Letter" : "M",
+            "Freq" : 29
+        },
+        {
+            "Letter" : "N",
+            "Freq" : 33
+        },
+        {
+            "Letter" : "O",
+            "Freq" : 18
+        },
+        {
+            "Letter" : "P",
+            "Freq" : 35
+        },
+        {
+            "Letter" : "Q",
+            "Freq" : 11
+        },
+        {
+            "Letter" : "R",
+            "Freq" : 45
+        },
+        {
+            "Letter" : "S",
+            "Freq" : 43
+        },
+        {
+            "Letter" : "T",
+            "Freq" : 28
+        },
+        {
+            "Letter" : "U",
+            "Freq" : 26
+        },
+        {
+            "Letter" : "V",
+            "Freq" : 30
+        },
+        {
+            "Letter" : "X",
+            "Freq" : 5
+        },
+        {
+            "Letter" : "Y",
+            "Freq" : 4
+        },
+        {
+            "Letter" : "Z",
+            "Freq" : 2
+        }
+    ]
+
+
+    // set the dimensions of the canvas
+    var margin = {top: 20, right: 20, bottom: 70, left: 40},
+        width = 600 - margin.left - margin.right,
+        height = 300 - margin.top - margin.bottom;
+
+
+    // set the ranges
+    var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
+
+    var y = d3.scale.linear().range([height, 0]);
+
+    // define the axis
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom")
+
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left")
+        .ticks(10);
+
+
+    // add the SVG element
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+
+    // load the data
+    d3.json("data", function(error, data) {
+
+        data.forEach(function(d) {
+            d.Letter = d.Letter;
+            d.Freq = +d.Freq;
+        });
+
+        // scale the range of the data
+        x.domain(data.map(function(d) { return d.Letter; }));
+        y.domain([0, d3.max(data, function(d) { return d.Freq; })]);
+
+        // add axis
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+            .selectAll("text")
+            .style("text-anchor", "end")
+            .attr("dx", "-.8em")
+            .attr("dy", "-.55em")
+            .attr("transform", "rotate(-90)" );
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 5)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Frequency");
+
+
+        // Add bar chart
+        svg.selectAll("bar")
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", function(d) { return x(d.Letter); })
+            .attr("width", x.rangeBand())
+            .attr("y", function(d) { return y(d.Freq); })
+            .attr("height", function(d) { return height - y(d.Freq); });
+
+    });
+
+</script>
+
+<script>
+    var data = [
+        {
+            "Letter": "A",
+            "Freq": 20
+        },
+        {
+            "Letter" : "B",
+            "Freq": 12
+        },
+        {
+            "Letter" : "C",
+            "Freq": 47
+        },
+        {
+            "Letter" : "D",
+            "Freq": 34
+        },
+        {
+            "Letter" : "E",
+            "Freq" : 54
+        },
+        {
+            "Letter" : "F",
+            "Freq" : 21
+        },
+        {
+            "Letter" : "G",
+            "Freq" : 57
+        },
+        {
+            "Letter" : "H",
+            "Freq" : 31
+        },
+        {
+            "Letter" : "I",
+            "Freq" : 17
+        },
+        {
+            "Letter" : "J",
+            "Freq" : 5
+        },
+        {
+            "Letter" : "K",
+            "Freq" : 23
+        },
+        {
+            "Letter" : "L",
+            "Freq" : 39
+        },
+        {
+            "Letter" : "M",
+            "Freq" : 29
+        },
+        {
+            "Letter" : "N",
+            "Freq" : 33
+        },
+        {
+            "Letter" : "O",
+            "Freq" : 18
+        },
+        {
+            "Letter" : "P",
+            "Freq" : 35
+        },
+        {
+            "Letter" : "Q",
+            "Freq" : 11
+        },
+        {
+            "Letter" : "R",
+            "Freq" : 45
+        },
+        {
+            "Letter" : "S",
+            "Freq" : 43
+        },
+        {
+            "Letter" : "T",
+            "Freq" : 28
+        },
+        {
+            "Letter" : "U",
+            "Freq" : 26
+        },
+        {
+            "Letter" : "V",
+            "Freq" : 30
+        },
+        {
+            "Letter" : "X",
+            "Freq" : 5
+        },
+        {
+            "Letter" : "Y",
+            "Freq" : 4
+        },
+        {
+            "Letter" : "Z",
+            "Freq" : 2
+        }
+    ]
+</script>-->
+<!--</article>-->
+
+
+<div class="blog-post">
+<!--<article class="medium-8 columns">-->
+<!--<div class="row medium-8 large-7 columns">-->
+<!--<div class="row ">-->
+
+    <h3>Visualization 1 </h3>
+    <div class="meta">
+        Published: Thu Oct 13 2016 19:00:00 GMT-0500 (CDT)
+    </div>
+
+    
+
+
+<head>
+    <style>
+
+        .bar{
+            fill: steelblue;
+        }
+
+        .bar:hover{
+            fill: brown;
+        }
+
+        .axis {
+            font: 10px sans-serif;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+    </style>
+</head>
+
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+
+    var data = [
+        {
+            "Letter": "A",
+            "Freq": 20
+        },
+        {
+            "Letter" : "B",
+            "Freq": 12
+        },
+        {
+            "Letter" : "C",
+            "Freq": 47
+        },
+        {
+            "Letter" : "D",
+            "Freq": 34
+        },
+        {
+            "Letter" : "E",
+            "Freq" : 54
+        },
+        {
+            "Letter" : "F",
+            "Freq" : 21
+        },
+        {
+            "Letter" : "G",
+            "Freq" : 57
+        },
+        {
+            "Letter" : "H",
+            "Freq" : 31
+        },
+        {
+            "Letter" : "I",
+            "Freq" : 17
+        },
+        {
+            "Letter" : "J",
+            "Freq" : 5
+        },
+        {
+            "Letter" : "K",
+            "Freq" : 23
+        },
+        {
+            "Letter" : "L",
+            "Freq" : 39
+        },
+        {
+            "Letter" : "M",
+            "Freq" : 29
+        },
+        {
+            "Letter" : "N",
+            "Freq" : 33
+        },
+        {
+            "Letter" : "O",
+            "Freq" : 18
+        },
+        {
+            "Letter" : "P",
+            "Freq" : 35
+        },
+        {
+            "Letter" : "Q",
+            "Freq" : 11
+        },
+        {
+            "Letter" : "R",
+            "Freq" : 45
+        },
+        {
+            "Letter" : "S",
+            "Freq" : 43
+        },
+        {
+            "Letter" : "T",
+            "Freq" : 28
+        },
+        {
+            "Letter" : "U",
+            "Freq" : 26
+        },
+        {
+            "Letter" : "V",
+            "Freq" : 30
+        },
+        {
+            "Letter" : "X",
+            "Freq" : 5
+        },
+        {
+            "Letter" : "Y",
+            "Freq" : 4
+        },
+        {
+            "Letter" : "Z",
+            "Freq" : 2
+        }
+    ]
+
+
+    // set the dimensions of the canvas
+    var margin = {top: 20, right: 20, bottom: 70, left: 40},
+        width = 600 - margin.left - margin.right,
+        height = 300 - margin.top - margin.bottom;
+
+
+    // set the ranges
+    var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
+
+    var y = d3.scale.linear().range([height, 0]);
+
+    // define the axis
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom")
+
+
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left")
+        .ticks(10);
+
+
+    // add the SVG element
+    var svg = d3.select("body").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+
+    // load the data
+    d3.json("data", function(error, data) {
+
+        data.forEach(function(d) {
+            d.Letter = d.Letter;
+            d.Freq = +d.Freq;
+        });
+
+        // scale the range of the data
+        x.domain(data.map(function(d) { return d.Letter; }));
+        y.domain([0, d3.max(data, function(d) { return d.Freq; })]);
+
+        // add axis
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+            .selectAll("text")
+            .style("text-anchor", "end")
+            .attr("dx", "-.8em")
+            .attr("dy", "-.55em")
+            .attr("transform", "rotate(-90)" );
+
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 5)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Frequency");
+
+
+        // Add bar chart
+        svg.selectAll("bar")
+            .data(data)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", function(d) { return x(d.Letter); })
+            .attr("width", x.rangeBand())
+            .attr("y", function(d) { return y(d.Freq); })
+            .attr("height", function(d) { return height - y(d.Freq); });
+
+    });
+
+</script>
+
+<script>
+    var data = [
+        {
+            "Letter": "A",
+            "Freq": 20
+        },
+        {
+            "Letter" : "B",
+            "Freq": 12
+        },
+        {
+            "Letter" : "C",
+            "Freq": 47
+        },
+        {
+            "Letter" : "D",
+            "Freq": 34
+        },
+        {
+            "Letter" : "E",
+            "Freq" : 54
+        },
+        {
+            "Letter" : "F",
+            "Freq" : 21
+        },
+        {
+            "Letter" : "G",
+            "Freq" : 57
+        },
+        {
+            "Letter" : "H",
+            "Freq" : 31
+        },
+        {
+            "Letter" : "I",
+            "Freq" : 17
+        },
+        {
+            "Letter" : "J",
+            "Freq" : 5
+        },
+        {
+            "Letter" : "K",
+            "Freq" : 23
+        },
+        {
+            "Letter" : "L",
+            "Freq" : 39
+        },
+        {
+            "Letter" : "M",
+            "Freq" : 29
+        },
+        {
+            "Letter" : "N",
+            "Freq" : 33
+        },
+        {
+            "Letter" : "O",
+            "Freq" : 18
+        },
+        {
+            "Letter" : "P",
+            "Freq" : 35
+        },
+        {
+            "Letter" : "Q",
+            "Freq" : 11
+        },
+        {
+            "Letter" : "R",
+            "Freq" : 45
+        },
+        {
+            "Letter" : "S",
+            "Freq" : 43
+        },
+        {
+            "Letter" : "T",
+            "Freq" : 28
+        },
+        {
+            "Letter" : "U",
+            "Freq" : 26
+        },
+        {
+            "Letter" : "V",
+            "Freq" : 30
+        },
+        {
+            "Letter" : "X",
+            "Freq" : 5
+        },
+        {
+            "Letter" : "Y",
+            "Freq" : 4
+        },
+        {
+            "Letter" : "Z",
+            "Freq" : 2
+        }
+    ]
+</script>
+
+    <div class="callout">
+        <ul class="menu simple">
+            <li><a href="#">Author: Jennifer Brown</a></li>
+            <li><a href="#">Comments: 3</a></li>
+        </ul>
+    </div>
+<!--</article>-->
+<!--</div>-->
+</div>
+
+<!--<div class="medium-3 columns" data-sticky-container>-->
+<!--<div class="sticky" data-sticky data-anchor="content">-->
+<!--<h4>Navigate</h4>-->
+<!--<ul>-->
+<!--<li><a href="/about">About Me</a></li>-->
+<!--<li><a href="/contact">Contact</a></li>-->
+<!--<li><a href="/data">Data Visualizations</a></li>-->
+<!--<li><a href="/coding">Coding Projects</a></li>-->
+<!--</ul>-->
+
+
+<!--</div>-->
+<!--</div>-->
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+
+</body>
+
+</html>

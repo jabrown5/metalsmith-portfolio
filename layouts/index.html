@@ -1,26 +1,26 @@
 {{> header }}
 
-    <!--<h1>{{ site.name }}</h1>-->
+<!--<h1>{{ site.name }}</h1>-->
 
 <!--<div class="medium-8 columns">-->
 
 
-    {{#each articles }}
+{{#each articles }}
 
-    <div class="blog-post recent">
+<div class="blog-post recent">
     <!--<div class="recent">-->
-      <!--<li>-->
-        <div class="title"><a href="{{ path }}">{{ title }}</a></div>
-        <div class="date">{{ date }}</div>
+    <!--<li>-->
+    <div class="title"><a href="{{ path }}">{{ title }}</a></div>
+    <div class="date">{{ date }}</div>
 
-        <!--SHOW THE FIRST BIT OF TEXT FROM BLOG POST!!-->
-        <!--OR AN IMAGE / VISUALIZATION-->
-        <p> {{blurb}}</p>
-      <!--</li>-->
-    </div>
+    <!--SHOW THE FIRST BIT OF TEXT FROM BLOG POST!!-->
+    <!--OR AN IMAGE / VISUALIZATION-->
+    <p> {{blurb}}</p>
+    <!--</li>-->
+</div>
 
-    {{/each}}
-    <!--</div>-->
+{{/each}}
+<!--</div>-->
 
 
 {{> footer }}
