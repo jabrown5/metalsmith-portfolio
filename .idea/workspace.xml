@@ -2,35 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a56d8434-afb5-4c26-94e0-aae0023d3cf0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/about/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/cats-are-awesome/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/contact/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/crazy-cats/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/hello-world/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/scripts/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/foundation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/test-test-test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/visualization-1/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/visualization-2/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/visualization-3/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/articles/spooky-action.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/articles/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/articles/viz1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/articles/viz2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/articles/viz3.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/articles/hello-cats.md" afterPath="$PROJECT_DIR$/src/articles/good-cat.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/articles/hello-universe.md" afterPath="$PROJECT_DIR$/src/articles/question-game.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.js" afterPath="$PROJECT_DIR$/build.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/article.html" afterPath="$PROJECT_DIR$/layouts/article.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/index.html" afterPath="$PROJECT_DIR$/layouts/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/partials/footer.html" afterPath="$PROJECT_DIR$/layouts/partials/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/partials/header.html" afterPath="$PROJECT_DIR$/layouts/partials/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/contact.md" afterPath="$PROJECT_DIR$/src/contact.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/stylesheets/style.css" afterPath="$PROJECT_DIR$/src/stylesheets/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/nfl-arrest-data-2001-2016/index.html" afterPath="$PROJECT_DIR$/public/nfl-arrest-data-2001-2016/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/test-test-test/index.html" afterPath="$PROJECT_DIR$/public/test-test-test/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/the-good-cat-game/index.html" afterPath="$PROJECT_DIR$/public/the-good-cat-game/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/the-question-game/index.html" afterPath="$PROJECT_DIR$/public/the-question-game/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/articles/good-cat.md" afterPath="$PROJECT_DIR$/src/articles/good-cat.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/articles/nfl-arrest-post.md" afterPath="$PROJECT_DIR$/src/articles/nfl-arrest-post.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/articles/question-game.md" afterPath="$PROJECT_DIR$/src/articles/question-game.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/articles/test.md" afterPath="$PROJECT_DIR$/src/articles/test.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,6 +36,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layouts/article.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layouts/partials/header.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,31 +72,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-200">
-              <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+            <state relative-caret-position="310">
+              <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="good-cat.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/articles/good-cat.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layouts/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stylesheets/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="29" />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,21 +118,21 @@
         <option value="$PROJECT_DIR$/src/about.md" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/layouts/contact.html" />
-        <option value="$PROJECT_DIR$/layouts/article.html" />
         <option value="$PROJECT_DIR$/src/articles/test.html" />
         <option value="$PROJECT_DIR$/src/contact.md" />
-        <option value="$PROJECT_DIR$/build.js" />
         <option value="$PROJECT_DIR$/src/articles/NFL-arrests.md" />
         <option value="$PROJECT_DIR$/src/articles/test2.md" />
         <option value="$PROJECT_DIR$/src/articles/test3.md" />
         <option value="$PROJECT_DIR$/src/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/layouts/partials/footer.html" />
         <option value="$PROJECT_DIR$/layouts/partials/header.html" />
-        <option value="$PROJECT_DIR$/src/articles/test.md" />
-        <option value="$PROJECT_DIR$/src/articles/question-game.md" />
-        <option value="$PROJECT_DIR$/src/articles/good-cat.md" />
         <option value="$PROJECT_DIR$/src/articles/nfl-arrest-post.md" />
+        <option value="$PROJECT_DIR$/src/articles/question-game.md" />
+        <option value="$PROJECT_DIR$/src/articles/test.md" />
+        <option value="$PROJECT_DIR$/src/articles/good-cat.md" />
         <option value="$PROJECT_DIR$/layouts/index.html" />
+        <option value="$PROJECT_DIR$/layouts/article.html" />
+        <option value="$PROJECT_DIR$/build.js" />
       </list>
     </option>
   </component>
@@ -357,12 +352,12 @@
       <workItem from="1480621497474" duration="188000" />
       <workItem from="1480628494040" duration="865000" />
       <workItem from="1480963043940" duration="650000" />
-      <workItem from="1480969569139" duration="7008000" />
+      <workItem from="1480969569139" duration="7885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13702000" />
+    <option name="totallyTimeSpent" value="14579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="853" height="726" extended-state="0" />
@@ -527,14 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layouts/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/contact.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -623,50 +610,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/articles/test.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/articles/question-game.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/articles/good-cat.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="29" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="29" />
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/articles/nfl-arrest-post.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -675,6 +646,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/articles/good-cat.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -693,10 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layouts/index.html">
+    <entry file="file://$PROJECT_DIR$/build.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="310">
+          <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -10,6 +10,9 @@ var collections = require('metalsmith-collections');
 var permalinks = require('metalsmith-permalinks');
 var serve = require('metalsmith-serve');
 var watch = require('metalsmith-watch');
+var dateFormatter = require('metalsmith-date-formatter');
+
+
 
 metalsmith(__dirname)
     .metadata({
@@ -41,6 +44,22 @@ metalsmith(__dirname)
         relative: false,
         pattern: ':title'
     }))
+
+    .use(dateFormatter({
+
+        dates: [
+            {
+                key: 'publishDate',
+                format: 'MMMM DD, YYYY'
+            },
+            {
+                key: 'modifiedDate',
+                format: 'MMMM, YYYY'
+            }
+        ]
+
+    }))
+
     .use(layouts({
         engine: 'handlebars',
         directory: './layouts',
