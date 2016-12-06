@@ -1,8 +1,7 @@
 ---
-title: test test test
-date: 2016-11-14
+title: "NFL Arrest data: 2001-2016"
+date: 2016-12-15
 blurb: What would your cat do today?  Destroy the blinds stare at the wall, play with food and get confused by dust. Go into a room to decide you didn't want to be in there anyway attack feet. Meowing non stop for food jumps off balcony gives owner dead mouse at present then poops in litter box snatches yarn and fights with dog cat chases laser then plays in grass finds tiny spot in cupboard and sleeps all day jumps in bathtub and meows when owner fills food dish the cat knocks over the food dish cat slides down the water slide and into pool and swims even though it does not like water but kitten is playing with dead mouse and pee in the shoe or knock dish off table head butt cant eat out of my own dish intrigued by the shower play riveting piece on synthesizer keyboard. Scratch the box then cats take over the world.
-
 ---
 
 <style>
@@ -31,9 +30,7 @@ blurb: What would your cat do today?  Destroy the blinds stare at the wall, play
     }
 </style>
 
-<!--<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>-->
-<script src="http://d3js.org/d3.v3.js"></script>
-<script type="text/javascript" src="../scripts/app.js"></script>
+
 
 <div id="viz1"></div>
 
@@ -43,17 +40,8 @@ blurb: What would your cat do today?  Destroy the blinds stare at the wall, play
 
 <div id="viz4"></div>
 
-<!--<script>-->
-    <!--$.ajax({-->
-        <!--url: "http://nflarrest.com/api/v1/player",-->
-        <!--type: "get",-->
-        <!--dataType: "json",-->
-        <!--success: function(data){-->
-            <!--console.log(data);-->
-            <!--//var message =-->
-        <!--},-->
-        <!--error: function(err) {-->
-            <!--console.log(err);-->
-        <!--}-->
-    <!--});-->
-<!--</script>-->
+
+
+
+<script src="http://d3js.org/d3.v3.js"></script>
+<script type="text/javascript" src="../scripts/app.js"></script>

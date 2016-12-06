@@ -22,12 +22,12 @@ metalsmith(__dirname)
     .destination('./public')
     .use(collections({
         articles: {
-            pattern: 'articles/**/*.html', //changed to html instead of .md
+            pattern: 'articles/**/*.md',
             sortBy: 'date',
             reverse: true
         },
         scripts: {
-            pattern: 'scripts/**/*.js' //changed to html instead of .md
+            pattern: 'scripts/**/*.js' //changed to js instead of .md
         },
         styles: {
             pattern: 'scripts/**/*.css' //changed to CSS -- NEEDS TESTING
