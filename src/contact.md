@@ -5,3 +5,11 @@
 
 <p>Balinese egyptian mau for siamese but siberian or tom for lion norwegian forest. Bobcat siamese and cheetah yet persian or munchkin. Maine coon havana brown, bengal for jaguar tom so manx ocicat. Bengal munchkin grimalkin thai yet sphynx kitty but cougar. Ocicat. Kitty russian blue malkin for manx. Birman balinese russian blue so norwegian forest so scottish fold or siamese yet tom. Birman maine coon balinese .
 </p>
+
+<h2>Find me on:</h2>
+
+Linked In
+
+Github
+
+e-mail

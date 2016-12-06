@@ -12,51 +12,60 @@ var serve = require('metalsmith-serve');
 var watch = require('metalsmith-watch');
 
 metalsmith(__dirname)
-  .metadata({
-    site: {
-      name: 'Data Viz Portfolio',
-      description: "Blog portfolio highlighting data visualization and other programming work"
-    }
-  })
-  .source('./src')
-  .destination('./public')
-	.use(collections({
-	      articles: {
-	        pattern: 'articles/**/*.md',
-	        sortBy: 'date',
-	        reverse: true
-	        }
-	      }))
-	.use(markdown())
-	.use(permalinks({
-	  relative: false,
-		pattern: ':title'
-	}))
-	.use(layouts({
-		engine: 'handlebars',
-		directory: './layouts',
-		default: 'article.html',
-		pattern: ["*/*/*html","*/*html","*html"],
-	  partials: {
-	        header: 'partials/header',
-	        footer: 'partials/footer'
-	        }
-	}))
-	.use(serve({
-	  port: 3000,
-	  verbose: true
-	}))
-	.use(watch({
-	    paths: {
-	      "${source}/**/*": true,
-	      "layout/**/*": "**/*",
-	    }
-	  }))
-  .build(function (err) {
-    if (err) {
-      console.log(err);
-    }
-    else {
-      console.log('All has been compiled!');
-    }
-  });
+    .metadata({
+        site: {
+            name: 'Data Viz Portfolio',
+            description: "Blog portfolio highlighting data visualization and other programming work"
+        }
+    })
+    .source('./src')
+    .destination('./public')
+    .use(collections({
+        articles: {
+            pattern: 'articles/**/*.md',
+            sortBy: 'date',
+            reverse: true
+        },
+        scripts: {
+            pattern: 'scripts/**/*.js' //changed to js instead of .md
+        },
+        styles: {
+            pattern: 'scripts/**/*.css' //changed to CSS -- NEEDS TESTING
+        },
+        images: {
+            pattern: 'scripts/**/*.jpg' //changed to jpg -- NEEDS TESTING
+        }
+    }))
+    .use(markdown())
+    .use(permalinks({
+        relative: false,
+        pattern: ':title'
+    }))
+    .use(layouts({
+        engine: 'handlebars',
+        directory: './layouts',
+        default: 'article.html',
+        pattern: ["*/*/*html","*/*html","*html"],
+        partials: {
+            header: 'partials/header',
+            footer: 'partials/footer'
+        }
+    }))
+    .use(serve({
+        port: 3000,
+        verbose: true
+    }))
+    .use(watch({
+        paths: {
+            "${source}/**/*": true,
+            "layout/**/*": "**/*"
+        }
+    }))
+    .build(function (err) {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            console.log('All has been compiled!');
+        }
+    });
